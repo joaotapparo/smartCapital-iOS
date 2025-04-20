@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		5F8BACEE2D6E8BA8004CC56A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F8BACD52D6E8BA6004CC56A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5F8BACDC2D6E8BA6004CC56A;
-			remoteInfo = SmartCapital;
-		};
-		5F8BACF82D6E8BA8004CC56A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F8BACD52D6E8BA6004CC56A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5F8BACDC2D6E8BA6004CC56A;
-			remoteInfo = SmartCapital;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		5F8BACDD2D6E8BA6004CC56A /* SmartCapital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCapital.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F8BACED2D6E8BA8004CC56A /* SmartCapitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCapitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F8BACF72D6E8BA8004CC56A /* SmartCapitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCapitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,34 +16,10 @@
 			path = SmartCapital;
 			sourceTree = "<group>";
 		};
-		5F8BACF02D6E8BA8004CC56A /* SmartCapitalTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SmartCapitalTests;
-			sourceTree = "<group>";
-		};
-		5F8BACFA2D6E8BA8004CC56A /* SmartCapitalUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SmartCapitalUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5F8BACDA2D6E8BA6004CC56A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F8BACEA2D6E8BA8004CC56A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F8BACF42D6E8BA8004CC56A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				5F8BACDF2D6E8BA6004CC56A /* SmartCapital */,
-				5F8BACF02D6E8BA8004CC56A /* SmartCapitalTests */,
-				5F8BACFA2D6E8BA8004CC56A /* SmartCapitalUITests */,
 				5F8BACDE2D6E8BA6004CC56A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				5F8BACDD2D6E8BA6004CC56A /* SmartCapital.app */,
-				5F8BACED2D6E8BA8004CC56A /* SmartCapitalTests.xctest */,
-				5F8BACF72D6E8BA8004CC56A /* SmartCapitalUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,52 +70,6 @@
 			productReference = 5F8BACDD2D6E8BA6004CC56A /* SmartCapital.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5F8BACEC2D6E8BA8004CC56A /* SmartCapitalTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F8BAD042D6E8BA8004CC56A /* Build configuration list for PBXNativeTarget "SmartCapitalTests" */;
-			buildPhases = (
-				5F8BACE92D6E8BA8004CC56A /* Sources */,
-				5F8BACEA2D6E8BA8004CC56A /* Frameworks */,
-				5F8BACEB2D6E8BA8004CC56A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5F8BACEF2D6E8BA8004CC56A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5F8BACF02D6E8BA8004CC56A /* SmartCapitalTests */,
-			);
-			name = SmartCapitalTests;
-			packageProductDependencies = (
-			);
-			productName = SmartCapitalTests;
-			productReference = 5F8BACED2D6E8BA8004CC56A /* SmartCapitalTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5F8BACF62D6E8BA8004CC56A /* SmartCapitalUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F8BAD072D6E8BA8004CC56A /* Build configuration list for PBXNativeTarget "SmartCapitalUITests" */;
-			buildPhases = (
-				5F8BACF32D6E8BA8004CC56A /* Sources */,
-				5F8BACF42D6E8BA8004CC56A /* Frameworks */,
-				5F8BACF52D6E8BA8004CC56A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5F8BACF92D6E8BA8004CC56A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5F8BACFA2D6E8BA8004CC56A /* SmartCapitalUITests */,
-			);
-			name = SmartCapitalUITests;
-			packageProductDependencies = (
-			);
-			productName = SmartCapitalUITests;
-			productReference = 5F8BACF72D6E8BA8004CC56A /* SmartCapitalUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +82,6 @@
 				TargetAttributes = {
 					5F8BACDC2D6E8BA6004CC56A = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					5F8BACEC2D6E8BA8004CC56A = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 5F8BACDC2D6E8BA6004CC56A;
-					};
-					5F8BACF62D6E8BA8004CC56A = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 5F8BACDC2D6E8BA6004CC56A;
 					};
 				};
 			};
@@ -201,28 +100,12 @@
 			projectRoot = "";
 			targets = (
 				5F8BACDC2D6E8BA6004CC56A /* SmartCapital */,
-				5F8BACEC2D6E8BA8004CC56A /* SmartCapitalTests */,
-				5F8BACF62D6E8BA8004CC56A /* SmartCapitalUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5F8BACDB2D6E8BA6004CC56A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F8BACEB2D6E8BA8004CC56A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F8BACF52D6E8BA8004CC56A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,34 +122,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F8BACE92D6E8BA8004CC56A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F8BACF32D6E8BA8004CC56A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5F8BACEF2D6E8BA8004CC56A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5F8BACDC2D6E8BA6004CC56A /* SmartCapital */;
-			targetProxy = 5F8BACEE2D6E8BA8004CC56A /* PBXContainerItemProxy */;
-		};
-		5F8BACF92D6E8BA8004CC56A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5F8BACDC2D6E8BA6004CC56A /* SmartCapital */;
-			targetProxy = 5F8BACF82D6E8BA8004CC56A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5F8BACFF2D6E8BA8004CC56A /* Debug */ = {
@@ -395,7 +251,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SmartCapital/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 49XFFR5J39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SmartCapital/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 49XFFR5J39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -446,78 +302,6 @@
 			};
 			name = Release;
 		};
-		5F8BAD052D6E8BA8004CC56A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 49XFFR5J39;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joaotapparo.SmartCapitalTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartCapital.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartCapital";
-			};
-			name = Debug;
-		};
-		5F8BAD062D6E8BA8004CC56A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 49XFFR5J39;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joaotapparo.SmartCapitalTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartCapital.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartCapital";
-			};
-			name = Release;
-		};
-		5F8BAD082D6E8BA8004CC56A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 49XFFR5J39;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joaotapparo.SmartCapitalUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SmartCapital;
-			};
-			name = Debug;
-		};
-		5F8BAD092D6E8BA8004CC56A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 49XFFR5J39;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = joaotapparo.SmartCapitalUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SmartCapital;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,24 +319,6 @@
 			buildConfigurations = (
 				5F8BAD022D6E8BA8004CC56A /* Debug */,
 				5F8BAD032D6E8BA8004CC56A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5F8BAD042D6E8BA8004CC56A /* Build configuration list for PBXNativeTarget "SmartCapitalTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F8BAD052D6E8BA8004CC56A /* Debug */,
-				5F8BAD062D6E8BA8004CC56A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5F8BAD072D6E8BA8004CC56A /* Build configuration list for PBXNativeTarget "SmartCapitalUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F8BAD082D6E8BA8004CC56A /* Debug */,
-				5F8BAD092D6E8BA8004CC56A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
