@@ -1,17 +1,18 @@
-//
-//  SmartCapitalApp.swift
-//  SmartCapital
-//
-//  Created by Joao Tapparo on 25/02/25.
-//
-
 import SwiftUI
 
 @main
 struct SmartCapitalApp: App {
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            if hasCompletedOnboarding {
+                LoginView()
+            } else {
+                UserInterestView {
+                    hasCompletedOnboarding = true
+                }
+            }
         }
     }
 }

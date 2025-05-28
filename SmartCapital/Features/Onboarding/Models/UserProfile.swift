@@ -1,7 +1,7 @@
-//
-//  UserProfile.swift
-//  SmartCapital
-//
-//  Created by Joao Tapparo on 26/05/25.
-//
+import Foundation
 
+/// Stores user preferences for filtering content.
+struct UserProfile: Codable {
+    var user_id: String
+    var interests: [NewsCategory]
+}
