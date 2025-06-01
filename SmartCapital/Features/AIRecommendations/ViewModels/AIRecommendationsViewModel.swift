@@ -15,10 +15,10 @@ class AIRecommendationsViewModel: ObservableObject {
         """
 
         do {
-            let result = try await OpenAIClient.shared.generateRecommendation(prompt: prompt)
+            let result = try await GeminiClient.shared.generateRecommendation(prompt: prompt)
             self.recommendation = Recommendation(content: result)
         } catch {
-            print("❌ Erro ao chamar OpenAI:", error)
+            print("❌ Erro ao chamar Gemini:", error)
             self.recommendation = Recommendation(content: "Erro ao gerar recomendação.")
         }
         isLoading = false

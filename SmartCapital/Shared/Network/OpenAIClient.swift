@@ -17,6 +17,16 @@ struct OpenAIResponse: Codable {
     let choices: [Choice]
 }
 
+struct OpenAIErrorResponse: Codable {
+    struct Error: Codable {
+        let message: String
+        let type: String
+        let param: String?
+        let code: String?
+    }
+    let error: Error
+}
+
 class OpenAIClient {
     static let shared = OpenAIClient()
     private let apiKey: String
@@ -36,7 +46,7 @@ class OpenAIClient {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
         let body = OpenAIRequest(
-            model: "gpt-4-turbo",
+            model: "gpt-3.5-turbo",
             messages: [OpenAIMessage(role: "user", content: prompt)]
         )
 
@@ -48,7 +58,17 @@ class OpenAIClient {
             print("🟢 Resposta da API OpenAI: \(jsonString)")
         }
         
-        let response = try JSONDecoder().decode(OpenAIResponse.self, from: data)
-        return response.choices.first?.message.content ?? "Sem resposta"
+        do {
+            let response = try JSONDecoder().decode(OpenAIResponse.self, from: data)
+            return response.choices.first?.message.content ?? "Sem resposta"
+        } catch {
+            // Tenta decodificar como erro
+            if let errorResponse = try? JSONDecoder().decode(OpenAIErrorResponse.self, from: data) {
+                throw NSError(domain: "OpenAI",
+                            code: 400,
+                            userInfo: [NSLocalizedDescriptionKey: "Erro da API OpenAI: \(errorResponse.error.message)"])
+            }
+            throw error
+        }
     }
 }
