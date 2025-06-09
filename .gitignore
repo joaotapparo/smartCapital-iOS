@@ -1,0 +1,42 @@
+# Swift/Xcode
+.DS_Store
+build/
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Arquivos de configuração e chaves
+.env
+*.env
+*.key
+*.pem
+*.p12
+*.xcconfig
+
+# Ignorar arquivos de chaves de API
+Secrets.plist
+*.secret
+
+# Ignorar logs
+*.log
+
+# Ignorar arquivos temporários
+*.swp
+*.swo
+
+# Ignorar arquivos de backup
+*~
+
+# Ignorar Pods (caso use CocoaPods)
+Pods/
+
+# Ignorar arquivos de cache
+.cache/
+
+# Ignorar arquivos de testes
+fastlane/report.xml
+fastlane/test_output/
+
+# Ignorar arquivos de upload de crash
+crashlytics-build.properties 
